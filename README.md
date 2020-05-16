@@ -104,6 +104,8 @@ $ git status             # 查看当前状态
 $ git diff               # 查看当先做的哪些更新没有暂存
 $ git diff -cached       # 查看哪些已经更新好了准备下次提交
 $ git commit -a -m       # git自动将已经跟踪过的文件暂存起来一并提交
+$ git commit --amend     # 修改最近的一次提交的注释
+$ git commit --amend 版本号     # 修改某个版本的提交的注释
 $ rm yd.txt              # 删除文件 暂存区里没有文集 版本库多了一个提交对象不过没有内容
 $ mv z.txt zx.txt        # 重新起名字跟已修改一样的操作
 $ git add ./
