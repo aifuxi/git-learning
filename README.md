@@ -170,10 +170,10 @@ $ git reset --hard 版本的hash值
 
 2. 创建本地仓库然后基础设置   `git init`
 
-3. 然后给github上面的地址起别名和用户别名
+3. 然后给github上面的地址起别名为origin和用户别名
    
   ```shell
-  $ git remote add use https://github.com/zhaoyuanmeng/git_to_use.git
+  $ git remote add origin https://github.com/zhaoyuanmeng/git_to_use.git
   $ git config --list
   ```
 
@@ -183,15 +183,15 @@ $ git reset --hard 版本的hash值
 
 5. 注意凭据 本人是可以直接上传的
 
-6. 检查完毕后推送到远地仓库  `git push use(别名) master（分支）`
+6. 检查完毕后推送到远地仓库  `git push origin(别名) master（分支）`
 
 7. 给员工开放权限通过github里面的manage access contributor
 
-8. 获取员工上传的代码 `git fetch use(别名)`
+8. 获取员工上传的代码 `git fetch origin(别名)`
 
-9. 切换成远程跟踪分支 `git checkout use/master`
+9. 切换成远程跟踪分支 `git checkout origin/master`
 
-10. 合并远程跟踪分支 `git merge use/master` 
+10. 合并远程跟踪分支 `git merge origin/master` 
 
 11. `git pull`  获取数据并合并
 
